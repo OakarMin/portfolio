@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="vendor/bootstrap-5.1.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="myPortfilio.css" />
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="vendor/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a75fb539dd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Mobile Menu -->
+    <section class="mobileMenuNavi">
+      <div class="row">
+        <div class="col-12">
+          <div class="crossIcon">
+            <i
+              class="fa-3x feather-x p-3 mobileMenuXicon"
+              style="color: white"
+            ></i>
+          </div>
+          <div class="mobileMenuContainer">
+            <li class="clickMobileMenu naviSelectActive">
+              <a
+                class="homeAnchorMobile naviMobileSelect"
+                href="#home"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Home
+              </a>
+            </li>
+            <li class="clickMobileMenu">
+              <a
+                href="#about"
+                class="aboutAnchorMobile naviMobileSelect"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                About
+              </a>
+            </li>
+            <li class="clickMobileMenu">
+              <a
+                href="#services"
+                class="servicesAnchorMobile naviMobileSelect"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Services
+              </a>
+            </li>
+            <li class="clickMobileMenu">
+              <a
+                href="#teachers"
+                class="teachersAnchorMobile naviMobileSelect"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Teachers
+              </a>
+            </li>
+            <li class="clickMobileMenu">
+              <a
+                href="#learn"
+                class="learnAnchorMobile naviMobileSelect"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Learn
+              </a>
+            </li>
+            <li class="clickMobileMenu">
+              <a
+                href="#contactInfo"
+                class="contactInfoAnchorMobile naviMobileSelect"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Contacts
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header Section -->
+    <section class="container-fluid headerContainer">
+      <div class="row">
+        <div
+          class="col-12 d-flex justify-content-around align-items-center p-3"
+        >
+          <div class="mobileMenu">
+            <i class="feather-menu mobileMenuIcon"></i>
+          </div>
+          <div class="header"><h1>Oakar Min Portfolio</h1></div>
+          <div class="headerMenu d-flex align-items-center">
+            <li class="clickHeaderMenu">
+              <a
+                class="homeUnderLine homeAnchor"
+                href="#home"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Home
+              </a>
+            </li>
+            <li class="aboutUnderLine clickHeaderMenu">
+              <a
+                href="#about"
+                class="aboutAnchor"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                About
+              </a>
+            </li>
+            <li class="servicesUnderLine clickHeaderMenu">
+              <a
+                href="#services"
+                class="servicesAnchor"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Services
+              </a>
+            </li>
+            <li class="workUnderLine clickHeaderMenu">
+              <a
+                href="#teachers"
+                class="teachersAnchor"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Teachers
+              </a>
+            </li>
+            <li class="blogsUnderLine clickHeaderMenu">
+              <a
+                href="#learn"
+                class="learnAnchor"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Learn
+              </a>
+            </li>
+            <li class="contactUnderLine clickHeaderMenu">
+              <a
+                href="#contactInfo"
+                class="contactInfoAnchor"
+                style="font-size: bold; font-size: 1.5rem"
+              >
+                Contacts
+              </a>
+            </li>
+          </div>
+        </div>
+        <div class="underlineMenuActive"></div>
+      </div>
+    </section>
+
+    <!-- Home Section -->
+    <section class="container-fluid homeContainer home navi-select" id="home">
+      <div class="row">
+        <div class="col-12">
+          <div class="myIntroduceWords">
+            <h1 class="myIntro">I am <span class="myName"></span></h1>
+            <h1 class="myLearn">
+              Still learning <span class="myLanguage"></span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="pt-5 about navi-select">
+      <div class="container aboutContainer">
+        <div class="row">
+          <!-- About me and skill -->
+          <div class="col-12">
+            <div class="card-body p-3 mb-5 bg-white rounded">
+              <div class="row">
+                <!-- Name & skill side -->
+                <div class="col-12 col-md-6 mb-5 mb-md-0">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <img
+                          src="vendor/photo/IMG_9617.png"
+                          class="myPhoto"
+                          alt=""
+                        />
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <h4 class="leftSideCurriculam">
+                          Name :
+                          <span class="myCurriculam text-black-50"
+                            >Oakar Min</span
+                          >
+                        </h4>
+                        <h4 class="leftSideCurriculam">
+                          Portfolio :
+                          <span class="myCurriculam text-black-50"
+                            >Front-end Developer</span
+                          >
+                        </h4>
+                        <h4 class="leftSideCurriculam">
+                          Age :
+                          <span class="myCurriculam text-black-50">27</span>
+                        </h4>
+                        <h4 class="leftSideCurriculam">
+                          Phone :
+                          <span class="myCurriculam text-black-50"
+                            >09-755986481</span
+                          >
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- skill side -->
+                  <div class="col-12 mt-4">
+                    <!-- Skills -->
+                    <h4 style="font-weight: bold">Skills</h4>
+
+                    <!-- Html skill -->
+                    <div class="skillMeasure">
+                      <p style="font-weight: bold" class="skillMeasureTag">
+                        HTML
+                        <span class="percentSkills htmlSkill" data-target="96"
+                          >0</span
+                        ><span>%</span>
+                      </p>
+                      <div class="progress">
+                        <div
+                          class="progress-bar progress-bar-striped progress-bar-animated"
+                          role="progressbar"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          data-target="85"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <!-- Css skill -->
+                    <div class="skillMeasure">
+                      <p style="font-weight: bold" class="skillMeasureTag">
+                        CSS <span class="percentSkills" data-target="95">0</span
+                        ><span>%</span>
+                      </p>
+                      <div class="progress">
+                        <div
+                          class="progress-bar progress-bar-striped progress-bar-animated"
+                          role="progressbar"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          data-target="75"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <!-- PHP skill -->
+                    <div class="skillMeasure">
+                      <p style="font-weight: bold" class="skillMeasureTag">
+                        PHP <span class="percentSkills" data-target="25">0</span
+                        ><span>%</span>
+                      </p>
+                      <div class="progress">
+                        <div
+                          class="progress-bar progress-bar-striped progress-bar-animated"
+                          role="progressbar"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          data-target="25"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <!-- Javascript skill -->
+                    <div class="skillMeasure">
+                      <p style="font-weight: bold" class="skillMeasureTag">
+                        JAVASCRIPT
+                        <span class="percentSkills" data-target="90">0</span
+                        ><span>%</span>
+                      </p>
+                      <div class="progress">
+                        <div
+                          class="progress-bar progress-bar-striped progress-bar-animated"
+                          role="progressbar"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          data-target=""
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- About me side -->
+                <div class="col-12 col-md-6">
+                  <h4 style="font-weight: bold; width: fit-content">
+                    About Me
+                    <div class="aboutMeUnderline"></div>
+                  </h4>
+                  <p>
+                   Hello !
+                   <br>
+                   My name is Oakar Min.
+                  <br>
+                  I am 27 yeaers old right now.
+                  <br>
+                  I learned HTML , CSS , Javascript to be a front-end Developer.
+                  <br>
+                  I took BWD and SWD course at Teacher <i><b>Hein Htet Zan</b></i> from <i><b>MMS IT Institute.</b></i>
+                  I also learned from the <i><b>MSquare Programming You Tube Channel</b></i>.I have been successful in following projects 
+                    provided by <i><b>MMS IT Institute</b></i> and the projects on the <i><b>MSquare Programming You Tube Channel.</b></i> 
+                  </b></i>
+                  <br>
+                  I got BWD and SWD certificate from <i><b>MMS IT Institute.</b></i>
+                  <br>
+                  In addition to the  <i><b>MMS IT Institute</b></i>, I also studied the git and git hub , which are essential for work , as a <i><b>Creative Coder You Tube Channel.</b></i>
+                  <br>
+                  Now I am going to work on a portfolio responsive website written about me that uses everything I have learned.
+                  <br>
+                  My dream is to containue to study from being front-end developer to a fullstack developer.I am also currently studying PHP and Laravel Intro in the free course of <i><b>Creative Coder.</b></i>
+                  <br>
+                  Thanks also to <b><i>Sayar Hein Htet Zan from MMS IT Institute and Sayar Taung Paw Thar Lay from MSquare Programming You Tube Channel</i></b>  for teaching me and I will continue to learn better.
+                  </p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="pt-5 services navi-select">
+      <div class="container servicesContainer">
+        <div class="col-12">
+          <h1
+            style="font-weight: bold; margin: 0 auto; width: fit-content"
+            class="mb-3"
+          >
+            SERVICES
+            <div class="servicesUnderline"></div>
+          </h1>
+          <div class="row flexControlPhone">
+            <!-- Html div -->
+            <div class="col-12 col-md-4 mb-3 htmlDiv">
+              <div class="card-body bg-white hoverCard">
+                <div class="iconContainer">
+                  <i class="fa-brands fa-html5 fa-5x servicesIconAll"></i>
+                </div>
+                <h4 style="font-weight: bold; text-align: center" class="mt-3">
+                  HTML 5
+                </h4>
+                <p class="" style="text-align: center">
+                  An HTML document is a file containing hypertext markup language. HTML code is based on tags, or hidden keywords, which provide instructions for formatting the document. A tag starts with an angle bracket and the 'less than' sign: '<'. The tag ends with an angle bracket and the 'greater than' sign '>'.
+                </p>
+              </div>
+            </div>
+
+            <!-- Css div -->
+            <div class="col-12 col-md-4 mb-3 cssDiv">
+              <div class="card-body bg-white hoverCard">
+                <div class="iconContainer">
+                  <i class="fa-brands fa-css3 fa-5x servicesIconAll"></i>
+                </div>
+                <h4 style="font-weight: bold; text-align: center" class="mt-3">
+                  CSS 3
+                </h4>
+                <p class="" style="text-align: center">
+                  Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+                </p>
+              </div>
+            </div>
+
+            <!-- Javascript div -->
+            <div class="col-12 col-md-4 mb-3 javascriptDiv">
+              <div class="card-body bg-white hoverCard">
+                <div class="iconContainer">
+                  <i class="fab fa-js fa-5x servicesIconAll"></i>
+                </div>
+                <h4 style="font-weight: bold; text-align: center" class="mt-3">
+                  JAVASCRIPT
+                </h4>
+                <p class="" style="text-align: center">
+                  JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages or other host environments.Do not confuse JavaScript with the Java programming language
+                </p>
+              </div>
+            </div>
+            
+
+            <!-- Bootstrap div -->
+            <div class="col-12 col-md-4 mb-3 bootstrapDiv">
+              <div class="card-body bg-white hoverCard">
+                <div class="iconContainer">
+                  <i class="fa-brands fa-bootstrap fa-5x servicesIconAll"></i>
+                </div>
+                <h4 style="font-weight: bold; text-align: center" class="mt-3">
+                  BOOTSTRAP 5
+                </h4>
+                <p class="" style="text-align: center">
+                  Bootstrap is a giant collection of handy, reusable bits of code written in HTML, CSS, and JavaScript. It’s also a frontend development framework that enables developers and designers to quickly build fully responsive websites.Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.
+                  
+                </p>
+              </div>
+            </div>
+
+            <!-- Responsive div -->
+            <div class="col-12 col-md-4 mb-3 responsiveDiv">
+              <div class="card-body bg-white hoverCard">
+                <div class="iconContainer">
+                  <i class="fa-solid fa-binoculars fa-5x servicesIconAll"></i>
+                </div>
+                <h4 style="font-weight: bold; text-align: center" class="mt-3">
+                  RESPONSIVE WEB DESIGN
+                </h4>
+                <p class="" style="text-align: center">
+                  Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):Responsive web design is about creating web pages that look good on all devices!
+
+                  A responsive web design will automatically adjust for different screen sizes and viewports.
+                </p>
+              </div>
+            </div>
+
+            <!-- Web Design -->
+            <div class="col-12 col-md-4 mb-3 webDesignDiv">
+              <div class="card-body bg-white hoverCard">
+                <div class="iconContainer">
+                  <i
+                    class="fa fa-cat fa-5x servicesIconAll"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <h4 style="font-weight: bold; text-align: center" class="mt-3">
+                  Git And GitHub
+                </h4>
+                <p class="" style="text-align: center">
+                  At a high level, GitHub is a website and cloud-based service that helps developers store and manage their code, as well as track and control changes to their code. To understand exactly what GitHub is, you need to know two connected principles:
+                  All of these changes are then tracked and can be reverted if need be.Version control lets developers safely work through branching.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teacher -->
+    <section id="teachers" class="pt-5 teacherContainer teachers navi-select">
+      <div class="overlayTeacherContainer"></div>
+      <h1
+        style="
+          font-weight: bold;
+          margin: 0 auto;
+          width: fit-content;
+          color: white;
+          position: relative;
+        "
+        class="mb-3"
+      >
+        TEACHERS
+        <div class="teachersUnderline"></div>
+      </h1>
+      <div class="container" style="position: relative">
+        <div class="row">
+          <div class="col-12 overflow-hidden mt-5">
+            <div class="teachersIntroduction">
+              <div class="programmingLearning col-12">
+                <img
+                  src="vendor/photo/msquarePrograming.jpg"
+                  class="teachersLogo"
+                  alt=""
+                />
+                <h1 style="font-weight: bold; color: white">
+                  MSquare Programming You Tube Channel
+                </h1>
+                <p style="color: white; font-size: 20px" class="innerPtag">
+                  <b><i>MSquare programming You Tube Channel</i></b> teacher is <b><i>Sayar Taung Paw Thar Lay.</i></b>Taught Html from the beginning is now up to the front end beginner.Each vedio includes details on how the code works and how to think logically.Teacher gives lessons once a month. <b><i>MSquare Programming</i></b> also has a discord channel for our questions.If you want to learn more on <b><i>MSquare Programming</i></b> you can do so on <b><i> <a href="https://www.youtube.com/c/MSquareProgramming/videos">MSquare Programming You Tube Channel</a></i></b>
+                </p>
+              </div>
+
+              <div class="programmingLearning col-12">
+                <img src="vendor/photo/logo.png" class="mmsitLogo" alt="" />
+                <h1 style="font-weight: bold; color: white">
+                  MMS IT Institute
+                </h1>
+                <p style="color: white; font-size: 20px" class="innerPtag">
+                 The teacher at <b><i>MMS IT Institute</i></b> is <b><i>Sayar Hein Htet Zan.</i></b>In <b><i>MMS IT</i></b>, web developement is taught from the basic by the teacher himself.In addition to training at <b><i>MMS IT</i></b>, they also provide IT solutions.The business website and admin dashboard provided by <i><b>MMS IT</b></i> can be accessed at <a href="https://mms-it.com/">mms-it.com.</a> In <i><b>MMS IT online courses</b></i>, there are other admins besides the teacher who will respond immediately when asked.There are three steps you can take to become a full stack developer in <b><i>MMS IT.</i></b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="activeTeachersShowContainer" style="position: relative">
+          <div class="teachersShow teachersShowActive teachersShowOne"></div>
+          <div class="teachersShow teachersShowTwo"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- forPhoto -->
+    <section id="learn" class="forPhoto learn navi-select">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contactInfo -->
+    <section class="contactInfo p-5 navi-select" id="contactInfo">
+      <div class="container">
+        <div class="col-12">
+          <h1
+            style="font-weight: bold; margin: 0 auto; width: fit-content"
+            class="mb-3"
+          >
+            LET'S CONNECT
+            <div class="servicesUnderline"></div>
+          </h1>
+          <div class="row mt-5">
+            <div class="col-12 col-md-4 text-center">
+              <i class="fa-solid fa-place-of-worship fa-4x mb-4"></i>
+              <h3 style="font-weight: bold">My Home</h3>
+              <br />
+              <br />
+              <p style="font-weight: bold">
+                Buid(11) , Room(002) , Aung Mingalar St: , Sittaung Residence ,
+                Yuzana Garden City.
+              </p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <i class="fa-phone fa-solid fa-4x mb-4"></i>
+              <h3 style="font-weight: bold">Phone Number</h3>
+              <br />
+              <br />
+              <p style="font-weight: bold; margin-bottom: 0">09-755986481</p>
+              <p style="font-weight: bold">09-973951253</p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <i class="feather-mail fa-4x fa-solid mb-4"></i>
+              <h3 style="font-weight: bold">Mail</h3>
+              <br />
+              <br />
+              <p style="font-weight: bold; margin-bottom: 0">
+                oakarminokm1941995@gmail.com
+              </p>
+              <p>
+                Remark: I don't add this link to anchor tag. If you want to
+                contact me, you can select this gmail for copy to paste.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mapContainer mt-5">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.990071674525!2d96.27406775820575!3d16.830287947103688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c18d26715ab847%3A0x30360a2d99d867fd!2z4YCF4YCF4YC64oCL4YCQ4YCx4YCs4YCE4YC64YC4IOGAm-GAreGAleGAuuKAi-GAmeGAveGAlOGAuiDhgKHhgK3hgJnhgLrhgJrhgKwsIFlhbmdvbg!5e1!3m2!1sen!2smm!4v1649697278105!5m2!1sen!2smm"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="vendor/fontawesome-free-5.15.4-web/js/all.min.js"></script>
+    <script src="vendor/feather-icons-web/demo.js"></script>
+    <script src="vendor/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="myPortfilio.js"></script>
+  </body>
+</html>

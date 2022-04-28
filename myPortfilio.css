@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anybody', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --white: white;
+}
+
+
+li {
+    list-style-type: none;
+    width: 100px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+h3 {
+    margin: 0;
+}
+
+
+
+.headerMenu , .header, .myName, .myIntro, .myLearn {
+    color: var(--white);
+}
+
+.mobileMenu {
+    display: none;
+    font-size: 35px;
+    color: white;
+}
+
+.headerContainer {
+    position: sticky;
+    top: 0;
+    z-index: 5000;
+}
+
+.underlineMenuActive {
+    height: 1px;
+    background-color: white;
+    margin-top: -20px;
+    transition: all 0.5s;
+}
+
+
+
+.mobileMenuIcon {
+    transition: all 1.8s;
+}
+
+.mobileMenuContainer li {
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 150px;
+}
+
+/* 400px */
+
+
+/* Home Section */
+
+.homeContainer {
+    background-image: url(vendor/photo/hero-bg.jpg);
+    background-position: center;
+    height: 100vh;
+    margin-top: -88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileMenuNavi {
+    display: none;
+    width: 50%;
+}
+
+.myIntroduceWords {
+    width: 480px;
+}
+
+
+/* About Section */
+
+/* Name and skill side */
+.aboutContainer {
+    
+}
+
+.card-body {
+    box-shadow: 0px -4px 1px 2px rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%) !important;
+}
+
+.myPhoto {
+    width: 160px;
+}
+
+.myCurriculam{
+    font-size: 19px;
+}
+
+.leftSideCurriculam {
+    font-weight: bold;
+}
+
+.progress {
+    background-color: lightblue !important;
+}
+
+
+
+.test {
+    height: 100vh;
+}
+
+.skillMeasureTag {
+    margin-bottom: 0;
+}
+
+.skillMeasure {
+    margin-top: 20px;
+}
+
+/* About me side */
+
+.aboutMeUnderline {
+    height: 2px;
+    background-color: #007aff;
+}
+
+/* Services */
+.servicesContainer {
+    overflow: hidden;
+}
+
+.iconContainer{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: solid black 10px;
+    transition: all 500ms;
+}
+
+.hoverCard:hover .iconContainer {
+    background-color: #0A0708;
+    border: solid #747474 10px;
+}
+
+.servicesIconAll {
+    transition: all 500ms;
+}
+
+.hoverCard:hover .servicesIconAll {
+    color: #BBC4C2;
+}
+
+.htmlDiv , .cssDiv , .javascriptDiv{
+    transform: translate(-2000px);
+    transition: all 0.5s;
+}
+
+.bootstrapDiv, .responsiveDiv, .webDesignDiv {
+    transform: translate(2000px);
+    transition: all 0.5s;
+}
+
+/* Teacher */
+.teacherContainer {
+    background-image: url("vendor/photo/counters-bg.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    height: fit-content;
+    position: relative;
+    padding: 100px;
+}
+
+.overlayTeacherContainer{
+    background-color: #0078ff;
+    margin-top: -48px;
+}
+
+.overlayTeacherContainer {
+    top: 48px;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    position: absolute;
+}
+
+
+
+.servicesUnderline {
+    height: 2px;
+    background-color: black;
+}
+
+.teachersUnderline {
+    height: 2px;
+    background-color: white;
+}
+
+.programmingLearning {
+    padding: 20px;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.teachersLogo {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.teachersIntroduction {
+    display: flex;
+    flex-wrap: nowrap !important;
+    transition: all 0.5s;
+}
+
+.mmsitLogo {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.activeTeachersShowContainer {
+    display: flex;
+    width: 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teachersShow {
+    width: 20px;
+    height: 20px;
+    border: black  2px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.teachersShowActive {
+    background-color: white;
+}
+
+/* For Photo */
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px !important;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#006);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .forPhoto {
+    background: #111;
+    padding: 80px;
+  }
+
+  .swiper-wrapper , .swiper-slide {
+      width: 50% !important;
+  }
+
+  .swiper-3d, .swiper-3d.swiper-css-mode .swiper-wrapper {
+    perspective: 650px !important;
+}
+
+  .mapContainer {
+      width: fit-content;
+      margin: 0 auto;
+  }  
+
+  .crossIcon {
+      text-align: end;
+  }
+
+  .naviSelectActive {
+      background-color: rgba(63, 60, 60, 0.863);
+  }
+
+  /* 800px  */
+
+@media (max-width: 850px) {
+
+    .homeContainer {
+        margin-top: -123px;
+    }
+    .headerMenu {
+        display: none !important;
+    }
+    .mobileMenu {
+        display: block;
+    }
+    .forPhoto {
+        padding: 140px !important;
+    }
+
+    .swiper-wrapper, .swiper-slide {
+        width: 75% !important;
+    }
+    .underlineMenuActive {
+        display: none !important;
+    }
+    .mobileMenuNavi {
+        padding: 10px;
+        display: block !important;
+        position: fixed;
+        z-index: 6000;
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 100vh;
+        transition: all 0.5s;
+        transform: translate(-5000px);
+    }
+}
+
+/* 400px */
+
+@media (max-width:400px) {
+    .myLearn {
+        font-size: 20px;
+    }
+    .myIntro {
+        font-size: 2em;
+    }
+    .myIntroduceWords {
+        width: 240px !important;
+    }
+    .htmlDiv {
+        transition-delay: 0s !important;
+    }
+    .webDesignDiv {
+        transition-delay: 0s !important;
+    }
+    .programmingLearning > h1 , p {
+        font-size: 15px !important;
+    }
+    iframe {
+        width: 280px !important;
+        height: 280px !important;
+    }
+    .mobileMenuContainer li {
+        font-size: 85px;
+        height: 130px;
+    }
+    .forPhoto {
+        padding: 80px !important;
+    }
+}
+
+.innerPtag a {
+    text-decoration: none;
+    color: #12e802;
+}
